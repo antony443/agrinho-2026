@@ -1,0 +1,109 @@
+/* Variáveis de cores para facilitar o ajuste */
+:root {
+    --verde-primario: #2d5a27;
+    --verde-claro: #4caf50;
+    --background: #f8faf9;
+    --texto-escuro: #333333;
+    --branco: #ffffff;
+    --borda: #e0e6e3;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--texto-escuro);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+/* Customização da Barra de Navegação */
+.navbar {
+    background: linear-gradient(90deg, var(--verde-primario) 0%, #1e3d1a 100%) !important;
+    border-bottom: 4px solid var(--verde-claro);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Cards (Caixas de conteúdo) */
+.card {
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.card-header {
+    border-radius: 12px 12px 0 0 !important;
+    background-color: var(--branco);
+    border-bottom: 1px solid var(--borda);
+    color: var(--verde-primario);
+    font-weight: 700;
+    padding: 1.25rem;
+}
+
+/* Botões */
+.agro-btn {
+    background-color: var(--verde-primario);
+    color: var(--branco);
+    font-weight: 600;
+    padding: 12px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.agro-btn:hover {
+    background-color: var(--verde-claro);
+    transform: scale(1.02);
+}
+
+/* Tabela de Cronograma */
+.table {
+    background-color: var(--branco);
+    border-radius: 8px;
+}
+
+.table thead th {
+    background-color: #f1f5f2;
+    color: #555;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    border-top: none;
+}
+
+.table tbody td {
+    vertical-align: middle;
+    padding: 1rem;
+}
+
+/* Badges de Status (Pendente/Concluído) */
+.badge {
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+/* Alerta de Sustentabilidade */
+.alert-info {
+    background-color: #e8f5e9;
+    border-left: 5px solid var(--verde-claro);
+    color: #2e7d32;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+}
